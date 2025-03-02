@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen text-black ">
+    <header class="w-5/6 pt-10 mx-auto">
+        <nav class="flex justify-between p-4 rounded-md shadow-sm bg-slate-100">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="assets/logo.png" alt="">
+                <h2 class="text-2xl">Dev<span class="font-bold text-black">Bord</span></h2>
+            </div>
+            <div class="flex gap-8">
+                <div class="flex items-center gap-2">
+                    <img src="assets/checkbox.png" alt="">
+                    <span id="task-plus-btn" class="text-2xl font-bold text-black">23</span>
+                </div>
+                <div><img id="my-image" src="assets/theme-btn.png" alt=""></div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- main section -->
+    <!-- devide 3| 1 -->
+    <section class="grid w-5/6 grid-cols-4 gap-5 mx-auto mt-10">
+
+        <!-- 3 part -->
+        <section class="grid col-span-3 grid-rows-7 ">
+
+
+            <!-- nav -->
+            <section class="flex grid justify-between grid-cols-8 row-span-1 gap-3 px-1 ">
+                <!-- first  -->
+                <div class="flex items-center justify-center col-span-2 rounded-md shadow-md bg-slate-100">
+                    <img src="assets/checkbox.png" alt="">
+                    <div>
+                        <p>task Assiged</p>
+                        <p id="task-btn" class="font-bold">6</p>
+                    </div>
+                </div>
+                <!-- middel tab -->
+
+                <div class="flex items-center justify-center col-span-4 rounded-md shadow-md bg-gradient-to-tr from-[#3752FD] to-[#6C7FFA]">
+                    <img src="assets/board.png" alt="">
+                    <p id="next-btn" class="p-1 rounded-md hover:bg-green-300">Discover Something New Today!</p>
+                </div>
+
+
+                <!-- last tab -->
+
+                <div class="flex items-center justify-center col-span-2 gap-3 rounded-md shadow-md bg-slate-100 ">
+                    <img src="assets/calender.png" alt="">
+
+                    <!-- add here the current date -->
+                    <p id="change-date">Date</p>
+                </div>
+
+
+            </section>
+
+            <!-- 3 in  one -->
+            <!-- 11111111111111 -->
+            <section class="flex justify-between grid-cols-3 row-span-3 gap-2 py-5 mt-5 bg-white border-t border-black border-dashed">
+
+                <!--11111111111111111111111111  -->
+                <div class="flex-1 col-span-1 p-2 space-y-2 shadow-md bg-slate-100">
+                    <p class="p-2 bg-white rounded-md w-fit ">Shop Ease</p>
+                    <h3 id="text-one" class="text-xl font-bold">
+                        Fix Mobile Button Issue
+                    </h3>
+                    <p id="text-one-p" class="p-2 bg-white rounded-md w-fit">Debug using Chrome DevTools, check for
+                        overlapping elements, and ensure
+                        onClick works properly
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button id="btn-one" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+
+                <!-- 22222222222222222222222222 -->
+
+                <div class="flex-1 p-2 space-y-2 shadow-md bg-slate-100">
+                    <p class="p-2 bg-white rounded-md w-fit">CloudSynce</p>
+                    <h3 id="text-two" class="text-xl font-bold">
+                        Add Dark Mode
+                    </h3>
+                    <p class="p-2 bg-white rounded-md w-fit">Store the user's preference in localStorage, update CSS
+                        variables dynamically, and apply a smooth transition effect.
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button id="btn-two" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+
+                <!-- 333333333333333333333333333 -->
+                <div class="flex-1 p-2 space-y-2 shadow-md bg-slate-100">
+                    <p class="p-2 bg-white rounded-md w-fit">SwiftPay</p>
+                    <h3  id="text-three" class="text-xl font-bold">
+                        Optimize Home page 
+                    </h3>
+                    <p class="p-2 bg-white rounded-md w-fit">Debug using Chrome DevTools, check for overlapping
+                        elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button  id="btn-three" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- 2222222 -->
+
+
+            <section class="flex justify-between row-span-3 gap-2 p-2 mt-5 bg-white ">
+
+                <!--11111111111111111111111111  -->
+                <div class="p-2 space-y-2 shadow-md bg-slate-100 ">
+                    <p class="p-2 bg-white rounded-md w-fit">Meta</p>
+                    <h3 id="text-four" class="text-xl font-bold">
+                        Add new emoji 🤲
+                    </h3>
+                    <p class="p-2 bg-white rounded-md w-fit">Debug using Chrome DevTools, check for overlapping
+                        elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button id="btn-four" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+
+                <!-- 22222222222222222222222222 -->
+
+                <div class="p-2 space-y-2 shadow-md bg-slate-100 ">
+                    <p class="p-2 bg-white rounded-md w-fit">Google LLC</p>
+                    <h3 id="text-five" class="text-xl font-bold">
+                        Integrate OpenAI API
+                    </h3>
+                    <p class="p-2 bg-white rounded-md w-fit">Debug using Chrome DevTools, check for overlapping
+                        elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button id="btn-five" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+
+                <!-- 333333333333333333333333333 -->
+                <div class="p-2 space-y-2 shadow-md bg-slate-100 ">
+                    <p class="p-2 bg-white rounded-md w-fit">Glassdoar</p>
+                    <h3 id="text-six" class="text-xl font-bold">
+                        Improve Job searching
+                    </h3>
+                    <p class="p-2 bg-white rounded-md w-fit">Debug using Chrome DevTools, check for overlapping
+                        elements, and ensure onClick works properly
+                        and ensure onClick works properly
+                    </p>
+                    <p class="w-2 h-1 border-black border-1"></p>
+                    <div class="flex items-center justify-between p-4">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p class="font-bold">21 March 2025</p>
+                        </div>
+                        <button id="btn-six" class="px-2 text-white bg-blue-600 border-none btn ">Completed</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </section>
+        <!-- 1 part -->
+        <section class="col-span-1 p-2 rounded-lg bg-slate-100">
+            <div class="flex flex-col items-center justify-center mx-auto mt-5 space-y-2 ">
+                <div class="flex"><img class="" src="assets/activity.png" alt="">
+                    <p>Activity Log</p>
+                </div>
+                <button id="clear-history" class="mx-auto text-white bg-blue-600 border border-none btn">Clear
+                    History</button>
+            </div>
+            <div class="mt-2 mb-2 border-b border-black border-dashed"></div>
+
+            <div id="add-comment" class="px-2 space-y-5 w-fit">
+
+
+            </div>
+        </section>
+
+
+    </section>
+    <script src="script.js"></script>
+    <script src="utilites/utilites.js"></script>
+    <script src="new.html"></script>
+
+
+  
+
+
+
+</body>
