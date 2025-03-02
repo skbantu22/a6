@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="w-5/6 p-2 mx-auto text-black ">
+    <header class="pt-10 ">
+        <nav class="flex justify-between p-4 rounded-md shadow-sm bg-slate-100">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="assets/logo.png" alt="">
+                <h2 class="text-2xl">Dev<span class="font-bold text-black">Bord</span></h2>
+            </div>
+            <div class="flex gap-8">
+
+            </div>
+            <div><button id="back" class="text-white bg-blue-500 border-none btn">Back to home</button></div>
+
+
+        </nav>
+    </header>
+    <!-- Qna section -->
+    <section>
+        <div>
+            <h1 class="my-5 text-4xl font-bold text-center">Blog</h1>
+        </div>
+
+        <div class="p-2 my-5 rounded-md shadow-md bg-slate-100">
+            <h3 class="py-3 font-bold text-black border-b border-black border-dashed">Question-1: What are the different
+                ways to select an element in the DOM?</h3>
+            <p class="py-3">
+                1.getElementById(id)b <br>
+                2.getElementsByClassName(className) <br>
+                3.getElementsByTagName(tagName) <br>
+                4.querySelector(selector)
+            </p>
+
+        </div>
+        <div class="p-2 my-5 rounded-md shadow-md bg-slate-100">
+            <h3 class="py-3 font-bold text-black border-b border-black border-dashed">Question-2: What is the difference
+                between innerHTML, innerText, and textContent ?</h3>
+            <p class="py-3">
+                <table border="1">
+                    <thead>
+                      <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>Includes HTML?</th>
+                        <th>Reads Hidden Elements?</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     
+                        <table class="w-full border border-collapse border-gray-300 table-auto">
+                            <thead>
+                              <tr>
+                                <th class="px-4 py-2 border border-gray-300">Property</th>
+                                <th class="px-4 py-2 border border-gray-300">Description</th>
+                                <th class="px-4 py-2 border border-gray-300">Includes HTML?</th>
+                                <th class="px-4 py-2 border border-gray-300">Reads Hidden Elements?</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-4 py-2 font-semibold border border-gray-300">innerHTML</td>
+                                <td class="px-4 py-2 border border-gray-300">Gets or sets the <strong>HTML structure</strong> inside an element.</td>
+                                <td class="px-4 py-2 border border-gray-300">Yes</td>
+                                <td class="px-4 py-2 border border-gray-300">Yes</td>
+                              </tr>
+                              <tr>
+                                <td class="px-4 py-2 font-semibold border border-gray-300">innerText</td>
+                                <td class="px-4 py-2 border border-gray-300">Gets or sets the <strong>visible text</strong>, considering <strong>CSS styles</strong>.</td>
+                                <td class="px-4 py-2 border border-gray-300">No</td>
+                                <td class="px-4 py-2 border border-gray-300">No</td>
+                              </tr>
+                              <tr>
+                                <td class="px-4 py-2 font-semibold border border-gray-300">textContent</td>
+                                <td class="px-4 py-2 border border-gray-300">Gets or sets <strong>all the text</strong> inside an element, ignoring HTML.</td>
+                                <td class="px-4 py-2 border border-gray-300">No</td>
+                                <td class="px-4 py-2 border border-gray-300">Yes</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          
+
+            </p>
+
+        </div>
+        <div class="p-2 my-5 rounded-md shadow-md bg-slate-100">
+            <h3 class="py-3 font-bold text-black border-b border-black border-dashed">Question-3: What is event
+                delegation in the DOM?
+
+            </h3>
+            <p class="py-3">
+                Event delegation is a technique in JavaScript where a single event listener is attached to a parent
+                element instead of attaching event listeners to multiple child elements <br> <br><br>
+                const div = document.getElementsByTagName("div")[0]
+                div.addEventListener("click", (event) => {
+                if(event.target.tagName === 'BUTTON') {
+                console.log("button was clicked")
+                }
+                })</p>
+
+        </div>
+        <div class="p-2 my-5 rounded-md shadow-md bg-slate-100">
+            <h3 class="py-3 font-bold text-black border-b border-black border-dashed">
+                <p>Question-4: What is event bubbling in the DOM?
+            </h3>
+            an action that occurs as per the user's instruction as input and gives the output in response <br>
+            1.onclick <br>
+            2.onmouseover <br>
+            3.onchang <br>
+            domo event <br> <br> <br>
+
+
+            document.getElementById("parent").addEventListener("click", function() {
+            console.log("Parent clicked");
+            });
+
+            document.getElementById("child").addEventListener("click", function() {
+            console.log("Button clicked");
+            });
+
+
+
+            </p>
+
+        </div>
+        <div class="p-2 my-5 rounded-md shadow-md bg-slate-100">
+            <h3 class="py-3 font-bold text-black border-b border-black border-dashed">Question-5: How do you create,
+                add, and remove elements using JavaScript?</h3>
+            <p class="py-3">
+                1.Document.createElement(); <br>
+                2.removeChild(); <br>
+                3.appendChild();<br>
+
+            </p>
+
+        </div>
+    </section>
+    <script>
+        // index page back
+        document.getElementById("back").addEventListener("click", function () {
+            window.location.replace("index.html");
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
